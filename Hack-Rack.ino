@@ -25,8 +25,8 @@ void setup() {
 }
 
 void loop() {
-  gpsRead();
+  // gpsRead();
   float payload = 0.0f;
   broadcastNRFData(&payload, sizeof(payload));
-  delay(2000);
+  delay(100);
 }
